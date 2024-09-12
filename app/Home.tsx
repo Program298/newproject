@@ -1,27 +1,27 @@
 import React from 'react';
 import { View, Text, Button, StyleSheet,Image,TouchableOpacity} from 'react-native';
 
-export default function Home() {
+export default function Home({ navigation }) {
 
   return (
     <View style={styles.container}>
      <View style={styles.section2}>
-        <TouchableOpacity style={styles.item}>
+        <TouchableOpacity style={styles.item}  onPress={() => navigation.navigate('Screen2')}>
         <Image  source={require('../assets/icon/interpreter.png')} style={styles.image}></Image>
         <Text style={styles.texticon}>แปลภาษามือ</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.item}>
-        <Image  source={require('../assets/icon/open-book.png')} style={styles.image}></Image>
+        <TouchableOpacity style={styles.item} onPress={() => navigation.navigate('Screen3')}>
+        <Image  source={require('../assets/icon/open-book.png')} style={styles.image} ></Image>
         <Text style={styles.texticon}>ข้อมูลภาษามือ</Text>
         </TouchableOpacity>
 
      </View>
      <View style={styles.section2}>
-        <TouchableOpacity style={styles.item}>
+        <TouchableOpacity style={styles.item} onPress={() => navigation.navigate('Screen4')}>
         <Image  source={require('../assets/icon/communication.png')} style={styles.image}></Image>
         <Text style={styles.texticon}>ฝึกภาษามือ</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.item}>
+        <TouchableOpacity style={styles.item} onPress={() => navigation.navigate('Screen5')}>
         <Image  source={require('../assets/icon/sign-language.png')} style={styles.image}></Image>
         <Text style={styles.texticon}>ฝึกรูปแบบประโยค</Text>
         </TouchableOpacity>

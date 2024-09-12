@@ -73,6 +73,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     marginTop: 20,
     paddingHorizontal: 10,
+    fontFamily: 'Itim_400Regular',
   },
   button: {
     backgroundColor: '#17B2EA',
@@ -85,12 +86,14 @@ const styles = StyleSheet.create({
     shadowRadius: 10,
     elevation: 5,
     marginTop: 20,
+    
   },
   buttonText: {
     color: '#707070',
     fontSize: 18,
     textAlign: 'center',
-    margin:5
+    margin:5,
+    fontFamily: 'Itim_400Regular',
   },
   logo: {
     width: 300,

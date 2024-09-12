@@ -5,12 +5,15 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Login from './Login';
 import Home from './Home';
-import Screen2 from './Screen2';
-import Screen3 from './Screen3';
-import Screen4 from './Screen4';
+import Screen2 from './SLTranslate1';
+import Screen3 from './SLTranslate2';
+import Screen4 from './SLInfo';
 import Screen5 from './Screen5';
 import Screen6 from './Screen6';
-
+import Register from './Register';
+import ForgetPassword from './ForgetPassword';
+import  Camerav from './Camera';
+ 
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
 
@@ -106,6 +109,9 @@ export default function Index() {
     <Stack.Navigator initialRouteName="Login" screenOptions={{ headerShown: false }}>
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="Drawers" component={Drawers} />
+      <Stack.Screen name="Register" component={Register} />
+      <Stack.Screen name="ForgetPassword" component={ForgetPassword}/>
+      <Stack.Screen name="Camerav" component={Camerav}/>
     </Stack.Navigator>
 
   );
@@ -117,8 +123,9 @@ const styles = StyleSheet.create({
     height: 100
   },
   drawerContent: {
-    
+
     backgroundColor: 'rgba(0, 177, 241, 0.8)', 
+    
   },
   logoContainer: {
     alignItems: 'center',
